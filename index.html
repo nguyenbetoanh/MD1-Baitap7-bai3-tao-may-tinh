@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="nhapso1">
+<input type="text" id="nhapso2"><br>
+<button onclick="pcong()"> Addition+</button>
+<button onclick="ptru()">Subtraction-</button>
+<button onclick="pnhan()">Multiplication (X)</button>
+<button onclick="pchia()">Division(/)</button>
+<h1 id="ket" > </h1>
+<script>
+    function pcong() {
+        var cong1 = +document.getElementById('nhapso1').value
+        var cong2 = +document.getElementById('nhapso2').value
+        var ketQua
+        ketQua = cong1+cong2
+        document.getElementById('ket').innerHTML= ketQua
+    }
+    function ptru() {
+        var tru1 = +document.getElementById('nhapso1').value
+        var tru2 = +document.getElementById('nhapso2').value
+         ketQua = tru1-tru2
+        document.getElementById('ket').innerHTML= ketQua
+    }
+    function pnhan() {
+        var nhan1 = +document.getElementById('nhapso1').value
+        var nhan2 = +document.getElementById('nhapso2').value
+        ketQua=nhan1*nhan2
+        document.getElementById('ket').innerHTML= ketQua
+    }
+    function pchia() {
+        var chia1 = +document.getElementById('nhapso1').value
+        var chia2 = +document.getElementById('nhapso2').value
+         ketQua=chia1/chia2
+document.getElementById('ket').innerHTML= ketQua
+    }
+</script>
+</body>
+</html>
